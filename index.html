@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="button">
+        <img src="/img/left.png" alt="left" id="leftButton">
+            <div class="content">
+                <div class="slider">
+                    <span><img src="/img/BethCrowley.png" alt=""></span>
+                    <span><img src="/img/lindsey_stirling_original.jpg" alt=""></span>
+                    <span><img src="/img/BethCrowley.png" alt=""></span>
+                </div>
+                <div class="slider">
+                    <span><img src="/img/do_while.jpg" alt=""></span>
+                    <span><img src="/img/enterprise.jpg" alt=""></span>
+                    <span><img src="/img/zakat-na-pesochnom-beregu-okeana.jpg" alt=""></span>
+                </div>
+            </div>
+        <img src="/img/right.png" alt="right" id="rightButton">
+    </div>
+
+    <script>
+        let horizontScroll = document.querySelector('.content');
+        let leftButton = document.getElementById('leftButton');
+        let rightButton = document.getElementById('rightButton');
+
+        leftButton.addEventListener('click', ()=> {
+            horizontScroll.style.scrollBehavior = "smooth";
+            horizontScroll.scrollLeft -= 900;
+        });
+
+        rightButton.addEventListener('click', ()=> {
+            horizontScroll.style.scrollBehavior = "smooth";
+            horizontScroll.scrollLeft += 900;
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.content {
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+    box-shadow: 0 0 5px;
+    background-color: red;
+}
+.content .slider {
+    width: 100%;
+    display: flex;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    padding: 100px;
+    flex: none;
+}
+.content .slider img {
+    width: 70%;
+    height: 100%;
+}
+.content::-webkit-scrollbar {
+    display: none;
+}
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+}
+.button #leftButton, .button #rightButton {
+    width: 70px;
+    cursor: pointer;
+    margin: 30px;
+}
